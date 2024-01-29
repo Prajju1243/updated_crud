@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz</title>
+  <link rel="stylesheet" href="./java.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: powderblue;
+    }
+
+    .quiz-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .question {
+      margin-bottom: 10px;
+    }
+
+    .options {
+      margin-bottom: 20px;
+    }
+
+    .result {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <div class="quiz-container-sub">
+    <div class='s1'>
+    <h1>SECTION-1</h1>
+    <form id="quizForm" onsubmit="return submitQuiz()">
+      
+      <div class="question">
+        <p>1. Nnumber of primitive data types in java<area shape="poly" coords="" href="" alt="">?</p>
+        <div class="options">
+          <input type="radio" name="q1" value="a"> a) 6<br>
+          <input type="radio" name="q1" value="b"> b) 7<br>
+          <input type="radio" name="q1" value="c"> c) 8<br>
+          <input type="radio" name="q1" value="d"> d) 9<br>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>2. what is the size of float and double in java?</p>
+        <div class="options">
+          <input type="radio" name="q2" value="a"> a) 32 and 64<br>
+          <input type="radio" name="q2" value="b"> b) 32 and 32<br>
+          <input type="radio" name="q2" value="c"> c) 64 and 64<br>
+          <input type="radio" name="q2" value="d"> d) 64 and 32<br>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>3. To which of the following does the class string belong to?</p>
+        <div class="options">
+          <input type="radio" name="q3" value="a"> a) java.lang<br>
+          <input type="radio" name="q3" value="b"> b) java.awt<br>
+          <input type="radio" name="q3" value="c"> c) java.applet<br>
+          <input type="radio" name="q3" value="d"> d) java.string<br>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>4. Identify the return type of a method that does not return any value?</p>
+        <div class="options">
+          <input type="radio" name="q4" value="a"> a) int<br>
+          <input type="radio" name="q4" value="b"> b) void<br>
+          <input type="radio" name="q4" value="c"> c) double<br>
+          <input type="radio" name="q4" value="d"> d) None<br>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>5. Output of Math.floor(3.6)?</p>
+        <div class="options">
+          <input type="radio" name="q5" value="a"> a) 3<br>
+          <input type="radio" name="q5" value="b"> b) 3.0<br>
+          <input type="radio" name="q5" value="c"> c) 4<br>
+          <input type="radio" name="q5" value="d"> d) 4.0<br>
+        </div>
+      </div>
+    </div>
+
+    <div class='s1'>
+        
+      <h1>SECTION-2</h1>
+      <h3></h3>
+
+      <div class="question">
+        <p>6. write a syntax to create an object?</p>
+        <div class="options">
+          <input type="text" name="q6" value=""> 
+          <!-- <input type="radio" name="q6" value="b"> b) Beijing<br>
+          <input type="radio" name="q6" value="c"> c) Seoul<br> -->
+        </div>
+      </div>
+
+      <div class="question">
+        <p>7. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q7" value="a"> a) Tokyo<br>
+          <input type="radio" name="q7" value="b"> b) Beijing<br>
+          <input type="radio" name="q7" value="c"> c) Seoul<br>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>8. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q8" value="a"> a) Tokyo<br>
+          <input type="radio" name="q8" value="b"> b) Beijing<br>
+          <input type="radio" name="q8" value="c"> c) Seoul<br>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>9. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q9" value="a"> a) Tokyo<br>
+          <input type="radio" name="q9" value="b"> b) Beijing<br>
+          <input type="radio" name="q9" value="c"> c) Seoul<br>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>10. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q10" value="a"> a) Tokyo<br>
+          <input type="radio" name="q10" value="b"> b) Beijing<br>
+          <input type="radio" name="q10" value="c"> c) Seoul<br>
+        </div>
+      </div>
+    </div>
+
+    <div class='s1'>
+      <h1>Section 3</h1>
+      <div class="question">
+        <p>11. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q11" value="a"> a) Tokyo<br>
+          <input type="radio" name="q11" value="b"> b) Beijing<br>
+          <input type="radio" name="q11" value="c"> c) Seoul<br>
+        </div>
+      </div>
+      <div class="question">
+        <p>12. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q12" value="a"> a) Tokyo<br>
+          <input type="radio" name="q12" value="b"> b) Beijing<br>
+          <input type="radio" name="q12" value="c"> c) Seoul<br>
+        </div>
+      </div>
+      <div class="question">
+        <p>13. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q13" value="a"> a) Tokyo<br>
+          <input type="radio" name="q13" value="b"> b) Beijing<br>
+          <input type="radio" name="q13" value="c"> c) Seoul<br>
+        </div>
+      </div>
+      <div class="question">
+        <p>14. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q14" value="a"> a) Tokyo<br>
+          <input type="radio" name="q14" value="b"> b) Beijing<br>
+          <input type="radio" name="q14" value="c"> c) Seoul<br>
+        </div>
+      </div>
+      <div class="question">
+        <p>15. What is the capital of Japan?</p>
+        <div class="options">
+          <input type="radio" name="q15" value="a"> a) Tokyo<br>
+          <input type="radio" name="q15" value="b"> b) Beijing<br>
+          <input type="radio" name="q15" value="c"> c) Seoul<br>
+        </div>
+      </div>
+    </div>
+      <input class="btn-submit btn btn-success" type="submit" value="Submit Quiz" class="res">
+    </form>
+
+    <div id="quizResult" class="result"></div>
+    <div id="quizGrade" class="grade"></div>
+  </div>
+</div>
+  <script>
+    function submitQuiz() {
+      var score = 0;
+
+      // Question 1
+      var q1Answer = document.querySelector('input[name="q1"]:checked');
+      if (q1Answer && q1Answer.value === "c") {
+        score++;
+      }
+
+      // Question 2
+      var q2Answer = document.querySelector('input[name="q2"]:checked');
+      if (q2Answer && q2Answer.value === "a") {
+        score++;
+      }
+
+      // Question 3
+      var q3Answer = document.querySelector('input[name="q3"]:checked');
+      if (q3Answer && q3Answer.value === "a") {
+        score++;
+      }
+
+      var q4Answer = document.querySelector('input[name="q4"]:checked');
+      if (q4Answer && q4Answer.value === "b") {
+        score++;
+      }
+
+      var q5Answer = document.querySelector('input[name="q5"]:checked');
+      if (q5Answer && q5Answer.value === "b") {
+        score++;
+      }
+
+      var q6Answer = document.querySelector('input[name="q6"]:checked');
+      if (q6Answer && q6Answer.value === "new constructor()") {
+        score++;
+      }
+
+      var q7Answer = document.querySelector('input[name="q7"]:checked');
+      if (q7Answer && q7Answer.value === "a") {
+        score++;
+      }
+
+      var q8Answer = document.querySelector('input[name="q8"]:checked');
+      if (q8Answer && q8Answer.value === "a") {
+        score++;
+      }
+
+      var q9Answer = document.querySelector('input[name="q9"]:checked');
+      if (q9Answer && q9Answer.value === "a") {
+        score++;
+      }
+
+      var q10Answer = document.querySelector('input[name="q10"]:checked');
+      if (q10Answer && q10Answer.value === "a") {
+        score++;
+      }
+      var q11Answer = document.querySelector('input[name="q11"]:checked');
+      if (q11Answer && q11Answer.value === "a") {
+        score++;
+      }
+      var q12Answer = document.querySelector('input[name="q12"]:checked');
+      if (q12Answer && q12Answer.value === "a") {
+        score++;
+      }
+      var q13Answer = document.querySelector('input[name="q13"]:checked');
+      if (q13Answer && q13Answer.value === "a") {
+        score++;
+      }
+
+      var q14Answer = document.querySelector('input[name="q14"]:checked');
+      if (q14Answer && q14Answer.value === "a") {
+        score++;
+      }
+      var q15Answer = document.querySelector('input[name="q15"]:checked');
+      if (q15Answer && q15Answer.value === "a") {
+        score++;
+      }
+
+
+
+      // Display the result
+      var resultContainer = document.getElementById('quizResult');
+     // resultContainer.innerHTML = "Your score: " + score + "/15";
+    //  alert(score)
+      // Display Grade
+      if(score >13 && score <=15){
+        var gradeResult = document.getElementById('quizGrade');
+         // gradeResult.innerHTML = "Excellent";
+          alert('Excellent '+ ' your score is : ' + score+"/15")
+      }else if(score >=10 && score <=13){
+        var gradeResult = document.getElementById('quizGrade');
+         // gradeResult.innerHTML = "Very Good";
+          alert('Very Good '+ ' your score is : ' + score+"/15")
+      }else if(score >=5 && score <10){
+        var gradeResult = document.getElementById('quizGrade');
+        //  gradeResult.innerHTML = "Average";
+          alert('Average '+ ' your score is : ' + score+"/15")
+      }else{
+        var gradeResult = document.getElementById('quizGrade');
+        //  gradeResult.innerHTML = "Better Luck Next Time Try Again...!";
+          alert('Better Luck Next Time Try Again...! '+ ' your score is : ' + score+"/15")
+      }
+      
+
+      // Prevent the form from actually submitting
+      return false;
+    }
+  </script>
+
+</body>
+</html>

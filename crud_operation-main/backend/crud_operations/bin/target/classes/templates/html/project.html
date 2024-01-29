@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./project.css">
+    <script src="https://kit.fontawesome.com/9720705b7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <h2 id="logo">JSPIDER</h2>
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#services">Courses</a></li>
+                <li> <a href="#Courses">Courses videos</a></li>
+                <li> <a href="C:\Users\pg162\OneDrive\Desktop\html\signup.html">Sign In</a></li>
+                <li> <a href="C:\Users\pg162\OneDrive\Desktop\html\Login1.html">Login</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <!-- <p>WELCOME TO QUGATES</p> -->
+            <h2><span>WELCOME TO JSPIDER</span> <br>Rajajinagar Bangalore,<br> Karnataka</h2>
+        </div>
+    </div>
+   </div>
+   <!-- -------------------ABOUT------------------- -->
+
+   <!-- ------------------SERVICES------------------ -->
+   <div id="services">
+    <div class="container">
+        <h2 class="sub-title">Courses</h2>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Web development involves creating and maintaining websites or web applications. It encompasses front-end (user interface), back-end (server-side logic), and databases, utilizing technologies like HTML, CSS, JavaScript, and more
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>JAVA</h2>
+                <p>Java is a versatile, object-oriented programming language known for its platform independence. It's widely used for developing desktop, web, and mobile applications, offering robust features and a large ecosystem.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>SQL</h2>
+                <p>
+                    SQL (Structured Query Language) is a programming language used for managing and manipulating relational databases. It facilitates tasks like querying data, updating records, and defining database structures.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- -----------------Courses------------------ -->
+
+   <div id="Courses">
+    <div class="container">
+        <h2 class="sub-title">Course Videos</h2>
+        <div class="work-list">
+            <div class="work">
+                <iframe src="https://www.youtube.com/embed/Y2LIDLmfWho?si=ia3yJr_0HXqzSV74" allowfullscreen  frameborder="10"></iframe>
+                <!-- <a href="my-cv.pdf" download="" class="btn btn2">Attachment Notes</a> -->
+                <button class="take-test"><a href="C:\Users\pg162\OneDrive\Desktop\html\web.html" >Take test</a></button>
+               
+            </div>
+            <div class="work">
+                <iframe src="https://www.youtube.com/embed/BGTx91t8q50?si=DwXpfjcsJXs_Gi0R" allowfullscreen  frameborder="10"></iframe>
+                <button class="take-test"><a href="C:\Users\pg162\OneDrive\Desktop\html\java.html" >Take test</a></button>
+            </div>
+            <div class="work">
+                <iframe src="https://www.youtube.com/embed/7S_tz1z_5bA?si=Im2nnjKc_p5xcg1P" allowfullscreen  frameborder="10"></iframe>
+                <button class="take-test"><a href="C:\Users\pg162\OneDrive\Desktop\html\sql.html" >Take test</a></button>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <!-- -----------------REGISTER FORM------------------ -->
+    <div class="copyright">
+        <p>Copyright © Prajwal. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+   </div>
+
+
+
+
+
+
+
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+   </script>
+   <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+    const msg=document.getElementById("msg");
+    msg.innerHTML="Message sent successfully"
+    setTimeout(function(){
+        msg.innerHTML=""
+    },5000)
+    form.reset()
+   </script>
+</body>
+</html>
